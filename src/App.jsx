@@ -254,6 +254,7 @@ const financeImages = [
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 lg:gap-8 text-gray-300">
           <li><a href="#about" className={`transition ${activeSection === "about" ? "text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" : "hover:text-cyan-400"}`}>About</a></li>
+          <li><a href="#timeline" className={`transition ${activeSection === "timeline" ? "text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" : "hover:text-cyan-400"}`}>Career</a></li>
           <li><a href="#skills" className={`transition ${activeSection === "skills" ? "text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" : "hover:text-cyan-400"}`}>Skills</a></li>
           <li><a href="#projects" className={`transition ${activeSection === "projects" ? "text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" : "hover:text-cyan-400"}`}>Projects</a></li>
           <li><a href="#certificates" className={`transition ${activeSection === "certificates" ? "text-cyan-400 font-semibold border-b-2 border-cyan-400 pb-1" : "hover:text-cyan-400"}`}>Certificates</a></li>
@@ -279,6 +280,7 @@ const financeImages = [
           <div className="absolute top-full left-0 right-0 bg-slate-900 border-b border-slate-800 md:hidden z-40 shadow-xl">
             <ul className="flex flex-col py-4">
               <li><a href="#about" onClick={() => setMobileMenuOpen(false)} className={`block px-6 py-3 transition ${activeSection === "about" ? "bg-slate-800 text-cyan-400" : "hover:bg-slate-800 hover:text-cyan-400"}`}>About</a></li>
+              <li><a href="#timeline" onClick={() => setMobileMenuOpen(false)} className={`block px-6 py-3 transition ${activeSection === "timeline" ? "bg-slate-800 text-cyan-400" : "hover:bg-slate-800 hover:text-cyan-400"}`}> Career </a></li>
               <li><a href="#skills" onClick={() => setMobileMenuOpen(false)} className={`block px-6 py-3 transition ${activeSection === "skills" ? "bg-slate-800 text-cyan-400" : "hover:bg-slate-800 hover:text-cyan-400"}`}>Skills</a></li>
               <li><a href="#projects" onClick={() => setMobileMenuOpen(false)} className={`block px-6 py-3 transition ${activeSection === "projects" ? "bg-slate-800 text-cyan-400" : "hover:bg-slate-800 hover:text-cyan-400"}`}>Projects</a></li>
               <li><a href="#certificates" onClick={() => setMobileMenuOpen(false)} className={`block px-6 py-3 transition ${activeSection === "certificates" ? "bg-slate-800 text-cyan-400" : "hover:bg-slate-800 hover:text-cyan-400"}`}>Certificates</a></li>
@@ -339,9 +341,10 @@ const financeImages = [
         </div>
 
         {/* Hero Image */}
-        <div className="flex justify-center md:justify-end z-10">
+        <div className="flex justify-center md:justify-end md:pr-16 z-10">
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-20 blur-2xl animate-pulse"></div>
+
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden ring-4 ring-cyan-500/30 shadow-2xl">
               <img
                 src={hero}
