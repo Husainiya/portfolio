@@ -304,8 +304,8 @@ const financeImages = [
           </h2>
 
           {/* Role Text */}
-          <p className="mt-4 text-lg sm:text-xl text-cyan-200 font-medium">
-            Full Stack Developer • AI Enthusiast • Problem Solver
+          <p className="mt-4 text-lg sm:text-xl text-cyan-200 font-medium"> 
+            Final Year IT Undergraduate • Full Stack Developer • AI Enthusiast
           </p>
           <p className="mt-5 sm:mt-6 text-lg sm:text-xl text-gray-400 leading-relaxed sm:leading-8">
             
